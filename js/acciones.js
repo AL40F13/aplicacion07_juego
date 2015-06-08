@@ -52,7 +52,7 @@ document.addEventListener("deviceready",function(){
 		basedatos.transaction(function(ejecutar){
 			var sql="SELECT NombreUsuario FROM Usuario";
 			ejecutar.executeSql(Sql,undefined,function(ejecutar,resultado){
-				var datosJugador=resultado.row.item(0);
+				var datosJugador=resultado.rows.item(0);
 				$('#jugador').text(datosJugador.NombreUsuario);
 				
 			});
