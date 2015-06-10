@@ -89,6 +89,7 @@ document.addEventListener("deviceready",function(){
 		flash($(this));
 		audio.play($(this).attr('id'));
 	});
+	
 }); 
 });
 
